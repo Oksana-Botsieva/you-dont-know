@@ -24,7 +24,6 @@ booksArray.forEach(function(book) {
   booksWithNumbers.push(bookObject);
 });
 
-console.log(booksWithNumbers);
 booksWithNumbers.sort(function(a, b) {
   if (a.number < b.number) {
     return -1;
@@ -34,7 +33,6 @@ booksWithNumbers.sort(function(a, b) {
     return 0;
   }
 });
-console.log(booksWithNumbers);
 
 container.innerHTML = '';
 
@@ -87,6 +85,7 @@ function addAndSortSixthBook() {
   ul.innerHTML = '';
   items.forEach(li => ul.appendChild(li));
 }
+
 
 addAndSortSixthBook();
 
